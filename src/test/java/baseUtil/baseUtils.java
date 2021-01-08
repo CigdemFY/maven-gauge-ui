@@ -51,7 +51,7 @@ public class baseUtils {
                 driver = getChrome();
                 break;
             case "FIREFOX":
-                System.setProperty("webdriver.gecko.driver", "./drivers/firefox/firefoxdriver");
+                System.setProperty("webdriver.gecko.driver", "./drivers/firefox/geckodriver");
                 driver = getFirefox();
                 break;
         }
@@ -82,7 +82,14 @@ public class baseUtils {
         FirefoxOptions firefoxOptions = new FirefoxOptions();
         FirefoxProfile firefoxProfile = new FirefoxProfile();
         firefoxProfile.setPreference("dom.webnotifications.enabled", false);
-        firefoxOptions.setProfile(firefoxProfile);
+        firefoxOptions.addArguments("--disable-notifications");
+        firefoxOptions.addArguments("test-type");
+        firefoxOptions.addArguments("disable-popup-blocking");
+        firefoxOptions.addArguments("ignore-certificate-errors");
+        firefoxOptions.addArguments("disable-translate");
+        firefoxOptions.addArguments("disable-infobars");
+        firefoxOptions.addArguments("--no-sandbox");
+        firefoxOptions.addArguments("disable-plugins");
         firefoxOptions.merge(capabilities);
         return new FirefoxDriver(firefoxOptions);
     }

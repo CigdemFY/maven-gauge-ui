@@ -1,9 +1,7 @@
 <testsuites>
-	<testsuite id="1" tests="1" failures="1" package="/Users/cigdem/Downloads/UI_TEST/src/test/java/Scenarios/Trendyol.spec" time="0.051" timestamp="2021-01-08T09:31:48" name="Trendyol Case Study" errors="0" hostname="TESTINIUMs-MacBook-Pro.local">
+	<testsuite id="1" tests="1" failures="0" package="/Users/cigdem/Downloads/UI_TEST/src/test/java/Scenarios/Trendyol.spec" time="113.910" timestamp="2021-01-08T09:38:49" name="Trendyol Case Study" errors="0" hostname="TESTINIUMs-MacBook-Pro.local">
 		<properties></properties>
-		<testcase classname="Trendyol Case Study" name="Trendyol-UI Case" time="0.051">
-			<failure message="Trendyol-UI Case&#xA;Scenario Pre Hook Failure: &#39;java.lang.IllegalStateException: The driver is not executable: /Users/cigdem/Downloads/UI_TEST/./drivers/firefox/firefoxdriver&#39;" type="Trendyol-UI Case&#xA;Scenario Pre Hook Failure: &#39;java.lang.IllegalStateException: The driver is not executable: /Users/cigdem/Downloads/UI_TEST/./drivers/firefox/firefoxdriver&#39;">com.google.common.base.Preconditions.checkState(Preconditions.java:589)&#xA;org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:140)&#xA;org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:131)&#xA;org.openqa.selenium.firefox.GeckoDriverService.access$100(GeckoDriverService.java:41)&#xA;org.openqa.selenium.firefox.GeckoDriverService$Builder.findDefaultExecutable(GeckoDriverService.java:141)&#xA;org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:339)&#xA;org.openqa.selenium.firefox.FirefoxDriver.toExecutor(FirefoxDriver.java:158)&#xA;org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:120)&#xA;org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:98)&#xA;baseUtil.baseUtils.initBrowser(baseUtils.java:55)&#xA;baseUtil.baseUtils.beforeScenario(baseUtils.java:44)&#xA;</failure>
-		</testcase>
+		<testcase classname="Trendyol Case Study" name="Trendyol-UI Case" time="113.910"></testcase>
 		<system-out></system-out>
 		<system-err></system-err>
 	</testsuite>
