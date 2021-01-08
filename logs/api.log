@@ -1,0 +1,6 @@
+08-01-2021 09:11:39.119 [Gauge] [ERROR] Unable to add directory /Users/cigdem/Downloads/UI_TEST/specs to file watcher: lstat /Users/cigdem/Downloads/UI_TEST/specs: no such file or directory
+08-01-2021 09:11:39.121 [Gauge] [INFO] Initializing concepts cache with 1 concepts
+08-01-2021 09:11:39.121 [Gauge] [DEBUG] Adding concepts from /Users/cigdem/Downloads/UI_TEST/src/test/java/Scenarios/Concept.cpt
+08-01-2021 09:11:39.121 [Gauge] [INFO] Initializing specs cache with 0 specs
+08-01-2021 09:11:39.121 [Gauge] [INFO] Initializing steps cache with 1 steps
+08-01-2021 09:11:39.121 [Gauge] [INFO] Gauge daemon initialized and listening on port: 55006

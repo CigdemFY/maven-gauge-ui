@@ -41,17 +41,20 @@ public class baseUtils {
 
     @BeforeScenario
     public void beforeScenario(){
-        //switch (type) {
-        //case CHROME:
-        System.setProperty("webdriver.chrome.driver", "./drivers/chrome/chromedriver");
-        driver = getChrome();
-        // break;
-        // break;
-        // case FIREFOX:
-        //   driver=new FirefoxDriver();
-        // System.setProperty("webdriver.chrome.driver","/src/test/resources/drivers/firefox/firefoxdriver");
+        initBrowser("FIREFOX");
+    }
 
-        // }
+    public void initBrowser(String browserName) {
+        switch (browserName) {
+            case "CHROME":
+                System.setProperty("webdriver.chrome.driver", "./drivers/chrome/chromedriver");
+                driver = getChrome();
+                break;
+            case "FIREFOX":
+                System.setProperty("webdriver.gecko.driver", "./drivers/firefox/firefoxdriver");
+                driver = getFirefox();
+                break;
+        }
         driver.get("https://www.trendyol.com");
         driver.getWindowHandle();
         driver.manage().window().maximize();
@@ -74,7 +77,7 @@ public class baseUtils {
         return new ChromeDriver(chromeOptions);
     }
 
-    public FirefoxDriver firefoxOption(){
+    public FirefoxDriver getFirefox(){
         DesiredCapabilities capabilities = new DesiredCapabilities().firefox();
         FirefoxOptions firefoxOptions = new FirefoxOptions();
         FirefoxProfile firefoxProfile = new FirefoxProfile();
@@ -174,9 +177,6 @@ public class baseUtils {
         return text1.contains(text2);
 
     }
-
-
-
 
     @AfterScenario
     public void afterScenario(){
