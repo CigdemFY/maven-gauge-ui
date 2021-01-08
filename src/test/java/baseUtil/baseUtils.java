@@ -25,21 +25,10 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import java.util.List;
 
 public class baseUtils {
-    enum WebDriverType {
-        CHROME,
-        FIREFOX
-    }
-
-    WebDriverType type;
 
     public static WebDriver driver;
     int invalidImageCount;
 
-
-    //@Parameters(name = "{0}")
-    //public static Collection<Object[]> browserCollection(){
-    //  return Arrays.asList(new Object[][]{{WebDriverType.CHROME},{}});
-    //}
 
     @BeforeScenario
     public void beforeScenario(){
