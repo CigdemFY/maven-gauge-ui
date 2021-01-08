@@ -1,0 +1,12 @@
+Created by cigdem on 6.01.2021
+
+This is a concept file with following syntax for each concept.
+# Eposta <eposta> ve Password <password> bilgileri ile giriş yapılır
+* Girişteki popup kapatılır
+* Giriş yap iconun üzerine gelinir
+* Giriş yap butona tıklanır
+* Eposta girişi <eposta> yapılır
+* Password girişi <password> yapılır
+* Login butonuna basılır
+* Login sonrası çıkan popup kapatılır
+* Anasayfa login kontrol edilir
