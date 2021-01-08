@@ -75,6 +75,11 @@ public class Pageobjects {
     @FindBy(css = "ul.basketProductList a")
     public WebElement cart_product_url;
 
+    @FindBy(css = "div.chckd")
+    public WebElement search_categ_text;
+
+
+
 
 
 

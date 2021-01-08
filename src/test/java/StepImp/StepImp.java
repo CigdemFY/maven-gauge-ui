@@ -57,69 +57,62 @@ public class StepImp extends baseUtils {
     public void clickwomanTab(){
         clickElement(pageobjects.kadın_Tab);
         Assert.assertEquals(getText(pageobjects.active_Tab),"KADIN");
-        checkBrokenImgs(); //http ile kontrol
-        //checkBrokenImgTab4(); //naturalwidth kontrol
+        checkBrokenImgs();
     }
 
     @Step("Erkek tabına tıklanır")
     public void clickmanTab(){
         clickElement(pageobjects.erkek_Tab);
         Assert.assertEquals(getText(pageobjects.active_Tab),"ERKEK");
-        checkBrokenImgs(); //http ile kontrol
-        //checkBrokenImgTab4(); //naturalwidth kontrol
+        checkBrokenImgs();
     }
 
     @Step("Çocuk tabına tıklanır")
     public void clickchildTab(){
         clickElement(pageobjects.cocuk_Tab);
         Assert.assertEquals(getText(pageobjects.active_Tab),"ÇOCUK");
+        checkBrokenImgs();
     }
 
     @Step("Ev&Yaşam tabına tıklanır")
     public void clickhomehealthTab(){
         clickElement(pageobjects.evyasam_Tab);
         Assert.assertEquals(getText(pageobjects.active_Tab),"EV & YAŞAM");
-        checkBrokenImgs(); //http ile kontrol
-        //checkBrokenImgTab4(); //naturalwidth kontrol
+        checkBrokenImgs();
     }
 
     @Step("Supermarket tabına tıklanır")
     public void clicksupermarketTab(){
         clickElement(pageobjects.supermarket_Tab);
         Assert.assertEquals(getText(pageobjects.active_Tab),"SÜPERMARKET");
-        checkBrokenImgs(); //http ile kontrol
-        //checkBrokenImgTab4(); //naturalwidth kontrol
+        checkBrokenImgs();
     }
 
     @Step("Kozmetik tabına tıklanır")
     public void clickcostemeticsTab(){ clickElement(pageobjects.kozmetik_Tab);
         Assert.assertEquals(getText(pageobjects.active_Tab),"KOZMETİK");
-        checkBrokenImgs(); //http ile kontrol
-        //checkBrokenImgTab4(); //naturalwidth kontrol
+        checkBrokenImgs();
     }
 
     @Step("Ayakkabı&Çanta tabına tıklanır")
     public void clickshoebagTab(){
         clickElement(pageobjects.ayakkabicanta_Tab);
         Assert.assertEquals(getText(pageobjects.active_Tab),"AYAKKABI & ÇANTA");
-        checkBrokenImgs(); //http ile kontrol
-        //checkBrokenImgTab4(); //naturalwidth kontrol
+        checkBrokenImgs();
     }
 
     @Step("Saat&Aksesuar tabına tıklanır")
     public void clickwatchaccsTab(){
         clickElement(pageobjects.saataksesuar_Tab);
         Assert.assertEquals(getText(pageobjects.active_Tab),"SAAT & AKSESUAR");
-        checkBrokenImgs(); //http ile kontrol
-        //checkBrokenImgTab4(); //naturalwidth kontrol
+        checkBrokenImgs();
     }
 
     @Step("Elektronik tabına tıklanır")
     public void clickelectronicsTab(){
         clickElement(pageobjects.elektronik_Tab);
         Assert.assertEquals(getText(pageobjects.active_Tab),"ELEKTRONİK");
-        checkBrokenImgs(); //http ile kontrol
-        //checkBrokenImgTab4(); //naturalwidth kontrol
+        checkBrokenImgs();
     }
 
     @Step("<seconds> saniye bekle")
@@ -135,8 +128,8 @@ public class StepImp extends baseUtils {
     @Step("Giyim altında elbise modülüne tıklanır")
     public void clickForDresses() {
         clickElement(pageobjects.elbise2);
-        checkBrokenImgs(); //http ile kontrol
-        //checkBrokenImgTab4(); //naturalwidth kontrol
+        Assert.assertEquals(getText(pageobjects.search_categ_text),"Elbise");
+        checkBrokenImgs();
     }
 
     @Step("İlk ürüne tıklanır")
@@ -148,6 +141,10 @@ public class StepImp extends baseUtils {
     public void clickAddCart() throws InterruptedException {
         clickElement(pageobjects.addtocart_button);
     }
+
+
+
+
 
 
 

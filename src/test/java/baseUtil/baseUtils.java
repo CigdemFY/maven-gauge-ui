@@ -32,7 +32,7 @@ public class baseUtils {
 
     @BeforeScenario
     public void beforeScenario(){
-        initBrowser("CHROME");
+        initBrowser("SAFARI");
     }
 
     public void initBrowser(String browserName) {
