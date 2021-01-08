@@ -17,6 +17,8 @@ import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.firefox.FirefoxProfile;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.safari.SafariDriver;
+import org.openqa.selenium.safari.SafariOptions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
@@ -41,7 +43,7 @@ public class baseUtils {
 
     @BeforeScenario
     public void beforeScenario(){
-        initBrowser("FIREFOX");
+        initBrowser("CHROME");
     }
 
     public void initBrowser(String browserName) {
@@ -54,12 +56,16 @@ public class baseUtils {
                 System.setProperty("webdriver.gecko.driver", "./drivers/firefox/geckodriver");
                 driver = getFirefox();
                 break;
+                case "SAFARI":
+                System.setProperty("webdriver.safari.driver", "./drivers/firefox/safaridriver");
+                driver = new SafariDriver();
+                break;
         }
+
         driver.get("https://www.trendyol.com");
         driver.getWindowHandle();
         driver.manage().window().maximize();
     }
-
 
 
     public ChromeDriver getChrome(){
@@ -93,6 +99,7 @@ public class baseUtils {
         firefoxOptions.merge(capabilities);
         return new FirefoxDriver(firefoxOptions);
     }
+
 
     public void clickElement(WebElement element){
         WebDriverWait wait = new WebDriverWait(driver,5);
